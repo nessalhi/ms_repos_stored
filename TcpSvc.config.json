@@ -1,0 +1,10 @@
+﻿{
+  "Tcp": {
+    "id": "TcpSvc",
+    "port": 11001,
+    "receiveBufferSize": 1024,
+    "logLevel": 0,
+    "addTimestamp": true,
+    "objLenBytesNum": 4
+  }
+}

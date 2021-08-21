@@ -1,0 +1,43 @@
+﻿{
+  "Machines": [
+    {
+      "id": "Machine1",
+      "description": "The 1st machine",
+
+      "CommandsLibs": {
+        "dir": "./CommandLibs",
+        "generalCommands": "GeneralCommandsLib",
+        "streamHandlersCommands": "StreamHandlersCommandsLib"
+      }
+    },
+
+    {
+      "id": "Machine2",
+      "description": "The 2nd machine (not used in sample)"
+    }
+  ],
+
+  "Tcp": {
+    "id": "Client1",
+    "host": "localhost",
+    "port": 11001,
+    "maxConnectionAttempts": 30,
+    "intervalBetweenConnectionAttemptsInMs": 1000,
+    "receiveBufferSize": 1024,
+    "logLevel": 0,
+    "addTimestamp": true,
+    "objLenBytesNum": 4
+  },
+
+  "SignalR": {
+    "isSecureProtocol": false,
+    "host": "localhost",
+    "port": 15001,
+    "maxConnectionAttempts": 30,
+    "intervalBetweenConnectionAttemptsInMs": 1000,
+    "hubPrefix": "hub",
+    "Hubs": {
+      "web": "web"
+    }
+  }
+}

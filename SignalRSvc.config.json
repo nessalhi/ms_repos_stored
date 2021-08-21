@@ -1,0 +1,11 @@
+﻿{
+  "SignalR": {
+    "isSecureProtocol": false,
+    "host": "localhost",
+    "port": 15001,
+    "hubPrefix": "hub",
+    "Hubs": {
+      "web": "web"
+    }
+  }
+}
